@@ -94,5 +94,5 @@ $(OUT_ASM_DIR)/%.bin: $(OUT_ASM_DIR)/%.elf | $(OUT_ASM_DIR)
 	$(RISCV_OBJCOPY) -O binary $< $@
 
 $(OUT_ASM_DIR)/%.hex: $(OUT_ASM_DIR)/%.bin | $(OUT_ASM_DIR)
-	python3 test/bin2hex.py 4 $< > $@
+	python3 test/bin2hex.py 8 $< > $@
 

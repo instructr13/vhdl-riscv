@@ -1,5 +1,5 @@
 .section .text.start
-.globl _start
+.global _start
 
 _start:
   # CSR addresses

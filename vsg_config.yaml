@@ -1,0 +1,35 @@
+indent:
+  tokens:
+    use_clause:
+      keyword:
+        token_after_library_clause: '+1'
+        token_if_no_matching_library_clause: current
+
+rules:
+  global:
+    indent_style: spaces
+    indent_size: 2
+
+rule:
+  architecture_004:
+    case_exceptions:
+      - "IEEE"
+
+  constant_004:
+    case: "upper"
+
+  generic_007:
+    case: "upper"
+
+  generic_map_002:
+    case: "upper"
+
+  type_500:
+    case: "upper"
+
+  instantiation_034:
+    method: "entity"
+
+  signal_007:
+    disable: true
+
